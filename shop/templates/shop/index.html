@@ -13,16 +13,17 @@
     <link rel="stylesheet" href="{% static 'css/styleAccueilBis.css' %}">
     <link rel="stylesheet" href="{% static 'css/stylecalc.css' %}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/core-js/3.36.1/minified.js">
 
 
 
  <!--  <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
 -->
-
-
 </head>
 
 <body>
+
+
 <div class="bg">
     <div class="container text-center text-middle">
         <div class="row align-items-center custom-line">
@@ -59,8 +60,8 @@
                     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
                     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="10000">
+                <div class="carousel-inner shadow p-3 mb-5 bg-white rounded">
+                    <div class="carousel-item active " data-bs-interval="5000">
                         <img src="{% static 'assets/sentrainerv4.png' %}" class="d-block mx-auto w-50" alt="...">
 
                         <!-- Instead of image, div with style and min-height --><div style="min-height: 140px;">
@@ -105,9 +106,70 @@
       </section>
 
 
-        <section>
+      <!--  <section>
             <div id="bandeau" class="bg"> <hr> </div>
-        </section>
+        </section>-->
+
+<!-- CERCLE QUI TOURNENT -->
+      <section class="bg section sectionbis-sm text-center">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-sm-6 col-md-6 col-lg-3 inset-vw">
+              <!--Circle progress bar-->
+              <div class="progress-circle">
+                <div class="progress-circle-block">
+                  <svg class="progress-circle-bar" x="0" y="0" width="170" height="170" viewbox="0 0 170 170">
+                    <circle class="progress-circle-bg" cx="85" cy="85" r="80"></circle>
+                    <circle class="progress-circle-fg clipped" cx="85" cy="85" r="80"></circle>
+                  </svg>
+                  <div class="progress-circle-counter text-white">87</div>
+                </div>
+                <p class="progress-circle-title text-light">Concentration</p>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-3 inset-vw">
+              <!--Circle progress bar-->
+              <div class="progress-circle">
+                <div class="progress-circle-block">
+                  <svg class="progress-circle-bar" x="0" y="0" width="170" height="170" viewbox="0 0 170 170">
+                    <circle class="progress-circle-bg" cx="85" cy="85" r="80"></circle>
+                    <circle class="progress-circle-fg clipped" cx="85" cy="85" r="80"></circle>
+                  </svg>
+                  <div class="progress-circle-counter text-white">91</div>
+                </div>
+                <p class="progress-circle-title text-light">Implication</p>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-3 inset-vw">
+              <!--Circle progress bar-->
+              <div class="progress-circle">
+                <div class="progress-circle-block">
+                  <svg class="progress-circle-bar" x="0" y="0" width="170" height="170" viewbox="0 0 170 170">
+                    <circle class="progress-circle-bg" cx="85" cy="85" r="80"></circle>
+                    <circle class="progress-circle-fg clipped" cx="85" cy="85" r="80"></circle>
+                  </svg>
+                  <div class="progress-circle-counter text-white">80</div>
+                </div>
+                <p class="progress-circle-title text-light">Personnalisation</p>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-3 inset-vw">
+              <!--Circle progress bar-->
+              <div class="progress-circle">
+                <div class="progress-circle-block">
+                  <svg class="progress-circle-bar" x="0" y="0" width="170" height="170" viewbox="0 0 170 170">
+                    <circle class="progress-circle-bg" cx="85" cy="85" r="80"></circle>
+                    <circle class="progress-circle-fg clipped" cx="85" cy="85" r="80"></circle>
+                  </svg>
+                  <div class="progress-circle-counter text-white">95</div>
+                </div>
+                <p class="progress-circle-title text-light">Progression</p>
+              </div>
+            </div>
+        </div>
+      </section>
+
+
 
 
 
@@ -188,20 +250,37 @@
 
 
 
-
-
+    <!-- FICHIER QUI PERMET DAVOIR LANIMATION EN PAGE DACCUEIL-->
+    <!--<script src="{% static 'js/core.min.js' %}"></script>-->
 
     <!-- Global Mailform Output
     <div class="snackbars" id="form-output-global"></div>-->
 
+
     <!--Scripts-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
-    <!--POUR LA FLECGE VERS LE HAUT-->
+
+
+    <!--POUR LA FLECHE VERS LE HAUT-->
     <script src="https://kit.fontawesome.com/425ff58ddd.js" crossorigin="anonymous"></script>
-    <script src="{% static 'js/core.min.js' %}"></script>
+
+
+
+    <!--<script src="{% static 'js/core.min.js' %}"></script>-->
     <script src="{% static 'js/accueil.js' %}"></script>
-    <script src="{% static 'js/scriptAccueilBis.js' %}"></script>
+
+
+    <!--A placer avant accueilBiss.js pour que l'animation fonctionne-->
+   <script src="{% static 'js/jquery36.js' %}"></script> <!--NECESSAIRE POUR AVOIR L'ANIMATION DE LA PAGE D'ACCUEIL AVEC ACCUEILBIS;JS-->
+    <!-- POUR AVOIR LES MENUS QUI FONCTIONNE IL NE FAUT PAS CE FICHIER-->
+
+
+    <script src="{% static 'js/scriptAccueilBis.js' %}"></script>  <!-- PERMET D'AVOIR L'ANIMATION DE LA PAGE D'ACCUEIL-->
+
+
+
+
 
 </body>
 
