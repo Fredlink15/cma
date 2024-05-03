@@ -62,7 +62,7 @@
 	 * @desc Check the element was been scrolled into the view
 	 * @param {object} elem - jQuery object
 	 * @return {boolean}
-	 * A
+	 * AbBC
 	 */
 	function isScrolledIntoView ( elem ) {
 		if ( isNoviBuilder ) return true;
