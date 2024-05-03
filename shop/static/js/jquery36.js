@@ -1,5 +1,5 @@
 /**
- * @module       jQuery
+ * @module       jQuery 36
  * @author       jQuery Foundation and other contributors
  * @see          https://code.jquery.com/jquery/
  * @license      MIT (jquery.org/license)
